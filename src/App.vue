@@ -1,28 +1,53 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="App">
+<!--    快捷链接-->
+    <XtxShortCut></XtxShortCut>
+<!--    顶部导航-->
+    <XtxHeaderNav></XtxHeaderNav>
+<!--    轮播区域-->
+    <XtxBanner></XtxBanner>
+<!--    新鲜好物-->
+    <XtxNewGoods></XtxNewGoods>
+<!--    热门品牌-->
+    <XtxHotBrand></XtxHotBrand>
+<!--    最新专题-->
+    <XtxTopic></XtxTopic>
+<!--    版权底部-->
+    <XtxFooter></XtxFooter>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import XtxShortCut from "@/components/XtxShortCut.vue";
+import XtxHeaderNav from "@/components/XtxHeaderNav.vue";
+import XtxBanner from "@/components/XtxBanner.vue";
+import XtxNewGoods from "@/components/XtxNewGoods.vue";
+import XtxHotBrand from "@/components/XtxHotBrand.vue";
+import XtxTopic from "@/components/XtxTopic.vue";
+import XtxFooter from "@/components/XtxFooter.vue";
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+components: {
+  XtxShortCut,
+  XtxHeaderNav,
+  XtxBanner,
+  XtxNewGoods,
+  XtxHotBrand,
+  XtxTopic,
+  XtxFooter
+}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.App {
+  padding: 0;
+  margin: 0;
 }
 </style>
+
+
+
+
+
