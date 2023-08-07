@@ -66,11 +66,11 @@
         <div class="right">
           <ul>
             <li>
-              <div><img src="@/assets/images/wechat.png" alt="" /></div>
+              <div><img src="../../assets/images/wechat.png" alt="" /></div>
               <p>微信公众号</p>
             </li>
             <li>
-              <div><img src="@/assets/images/app.png" alt="" /></div>
+              <div><img src="../../assets/images/app.png" alt="" /></div>
               <p>APP下载二维码</p>
             </li>
           </ul>

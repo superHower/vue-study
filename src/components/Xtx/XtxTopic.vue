@@ -20,7 +20,7 @@
         <li>
           <a href="#">
             <div class="pic">
-              <img src="@/assets/images/topic1.png" alt="" />
+              <img src="../../assets/images/topic1.png" alt="" />
               <div class="info">
                 <div class="left">
                   <h5>吃这些美食才不算辜负自己</h5>
@@ -50,7 +50,7 @@
         <li>
           <a href="#">
             <div class="pic">
-              <img src="@/assets/images/topic2.png" alt="" />
+              <img src="../../assets/images/topic2.png" alt="" />
               <div class="info">
                 <div class="left">
                   <h5>吃这些美食才不算辜负自己</h5>
@@ -80,7 +80,7 @@
         <li>
           <a href="#">
             <div class="pic">
-              <img src="@/assets/images/topic3.png" alt="" />
+              <img src="../../assets/images/topic3.png" alt="" />
               <div class="info">
                 <div class="left">
                   <h5>吃这些美食才不算辜负自己</h5>

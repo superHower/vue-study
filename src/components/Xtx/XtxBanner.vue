@@ -9,10 +9,10 @@
       <!-- 图 -->
       <ul class="pic">
         <li>
-          <a href="#"><img src="@/assets/images/banner1.png" alt="" /></a>
+          <a href="#"><img src="../../assets/images/banner1.png" alt="" /></a>
         </li>
         <li>
-          <a href="#"><img src="@/assets/images/banner1.png" alt="" /></a>
+          <a href="#"><img src="../../assets/images/banner1.png" alt="" /></a>
         </li>
       </ul>
       <!-- 侧导航 -->
