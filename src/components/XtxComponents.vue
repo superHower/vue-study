@@ -42,7 +42,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style>
 .Xtx {
   margin: 0;
   padding: 0;

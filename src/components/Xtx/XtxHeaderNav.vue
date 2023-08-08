@@ -41,6 +41,7 @@
 <style>
 /* 头部导航 */
 .header {
+
   display: flex;
   margin: 22px auto;
 }
@@ -60,6 +61,7 @@
 .header .nav {
   margin-top: 33px;
   margin-right: 27px;
+  width: 800px;
 }
 .header .nav ul {
   display: flex;
@@ -94,6 +96,7 @@
   color: #ccc;
 }
 .header .cart {
+  display: flex;
   position: relative;
   margin-top: 33px;
 }

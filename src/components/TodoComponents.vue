@@ -14,6 +14,7 @@ import TodoFooter from "@/components/Todo/TodoFooter.vue";
 export default {
   name: 'TodoComponents',
 
+
   data() {
     return {
       list: JSON.parse(localStorage.getItem('todoList')) || [
