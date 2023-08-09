@@ -3,6 +3,7 @@
     <TodoHeader @add="handleAdd"></TodoHeader>
     <TodoMain :list="list" @del="handleDel"></TodoMain>
     <TodoFooter :list="list" @clear="handleClear"></TodoFooter>
+    <TodoNews></TodoNews>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import TodoHeader from "@/components/Todo/TodoHeader.vue";
 import TodoMain from "@/components/Todo/TodoMain.vue";
 import TodoFooter from "@/components/Todo/TodoFooter.vue";
+import TodoNews from "@/components/Todo/TodoNews.vue";
 
 export default {
   name: 'TodoComponents',
@@ -50,7 +52,8 @@ export default {
       {
         TodoHeader,
         TodoFooter,
-        TodoMain
+        TodoMain,
+        TodoNews
       }
 }
 </script>

@@ -56,7 +56,7 @@ export default {
 .footer button {
   float: right;
   height: 30px;
-  width: 60px;
+  width: 70px;
   border-radius: 6px;
 }
 </style>

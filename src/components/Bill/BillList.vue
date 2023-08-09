@@ -1,5 +1,7 @@
 <style scoped>
 .list-box {
+  position: relative;
+  top: 100px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -39,41 +41,60 @@
     width: 100%;
   }
 }
+
+.echarts-box {
+  position: absolute;
+  left: 620px;
+  top: 3540px;
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
 </style>
 
 <template>
-  <div class="list-box">
+  <div class="bill-list">
 
-    <!-- 添加资产 -->
-    <form class="my-form">
-      <input v-model.trim="name" type="text" class="form-control" placeholder="消费名称" />
-      <input v-model.number="price" type="text" class="form-control" placeholder="消费价格" />
-      <button @click="add" type="button" class="btn btn-primary">添加账单</button>
-    </form>
+    <div class="list-box">
+      <!-- 添加资产 -->
+      <form class="my-form">
+        <input v-model.trim="name" type="text" class="form-control" placeholder="消费名称" />
+        <input v-model.number="price" type="text" class="form-control" placeholder="消费价格" />
+        <button @click="add" type="button" class="btn btn-primary">添加账单</button>
+      </form>
 
-    <table class="table table-hover">
-      <thead>
-      <tr>
-        <th>编号</th>
-        <th>消费名称</th>
-        <th>消费价格</th>
-        <th>操作</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="(item, index) in list" :key="item.id">
-        <td>{{ index+1 }}</td>
-        <td>{{ item.name }}</td>
-        <td :class="{red: item.price > 500}">{{ item.price.toFixed(2) }}</td>
-        <td><a @click="del(item.id)" href="javascript:;">删除</a></td>
-      </tr>
-      </tbody>
-      <tfoot>
-      <tr>
-        <td colspan="4">消费总计： {{ totalPrice.toFixed(2) }}</td>
-      </tr>
-      </tfoot>
-    </table>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>编号</th>
+          <th>消费名称</th>
+          <th>消费价格</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(item, index) in list" :key="item.id">
+          <td>{{ index+1 }}</td>
+          <td>{{ item.name }}</td>
+          <td :class="{red: item.price > 500}">{{ item.price.toFixed(2) }}</td>
+          <td><a @click="del(item.id)" href="javascript:;">删除</a></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td colspan="4">消费总计： {{ totalPrice.toFixed(2) }}</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+
+
+    <div class="bill-echarts">
+      <div ref="chartRef" class="echarts-box" id="main"></div>
+    </div>
+
   </div>
 </template>
 
@@ -106,7 +127,8 @@ export default {
   },
 // 操作dom, 插入图表
   mounted () {
-    this.myChart = echarts.init(document.querySelector('#main'))
+    // this.myChart = echarts.init(document.querySelector('#main'))
+    this.myChart = echarts.init(this.$refs.chartRef)
     this.myChart.setOption({
       // 大标题
       title: {
