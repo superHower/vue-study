@@ -4,7 +4,10 @@
     <XtxComponents></XtxComponents>
 <!--    小黑记事本   -->
     <TodoComponents></TodoComponents>
+<!--    loading-->
     <BillComponents></BillComponents>
+<!--    Slot-->
+    <SlotComponents></SlotComponents>
   </div>
 </template>
 
@@ -12,13 +15,15 @@
 import XtxComponents from "@/components/XtxComponents.vue";
 import TodoComponents from "@/components/TodoComponents.vue";
 import BillComponents from "@/components/BillComponents.vue";
+import SlotComponents from "@/components/SlotComponents.vue";
 
 export default {
   name: 'App',
   components: {
     BillComponents,
     XtxComponents,
-    TodoComponents
+    TodoComponents,
+    SlotComponents
   }
 }
 </script>
