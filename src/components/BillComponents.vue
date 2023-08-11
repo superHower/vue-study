@@ -1,5 +1,4 @@
 <script setup>
-
 import BillList from "@/components/Bill/BillList.vue";
 </script>
 

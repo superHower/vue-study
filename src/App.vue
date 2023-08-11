@@ -8,6 +8,8 @@
     <BillComponents></BillComponents>
 <!--    Slot-->
     <SlotComponents></SlotComponents>
+<!--    Music-->
+    <MusicComponents></MusicComponents>
   </div>
 </template>
 
@@ -16,14 +18,16 @@ import XtxComponents from "@/components/XtxComponents.vue";
 import TodoComponents from "@/components/TodoComponents.vue";
 import BillComponents from "@/components/BillComponents.vue";
 import SlotComponents from "@/components/SlotComponents.vue";
+import MusicComponents from "@/components/MusicComponents.vue";
 
 export default {
   name: 'App',
   components: {
-    BillComponents,
     XtxComponents,
     TodoComponents,
-    SlotComponents
+    BillComponents,
+    SlotComponents,
+    MusicComponents,
   }
 }
 </script>
