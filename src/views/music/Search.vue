@@ -1,7 +1,8 @@
 <template>
   <div class="search">
-<!--    <p>搜索关键字: {{ $route.query.key }} </p>-->
-    <p>动态路由搜索关键字: {{ $route.params.words }} </p>
+<!--    <p>路径path跳转?参数 -搜索关键字: {{ $route.query.key }} </p>-->
+    <p>动态路由/:words  -搜索关键字: {{ $route.params.words }} </p>
+
     <p>搜索结果: </p>
     <ul>
       <li>.............</li>

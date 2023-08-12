@@ -10,6 +10,8 @@
     <SlotComponents></SlotComponents>
 <!--    Music-->
     <MusicComponents></MusicComponents>
+<!--    interview-->
+    <InterviewComponents></InterviewComponents>
   </div>
 </template>
 
@@ -19,6 +21,8 @@ import TodoComponents from "@/components/TodoComponents.vue";
 import BillComponents from "@/components/BillComponents.vue";
 import SlotComponents from "@/components/SlotComponents.vue";
 import MusicComponents from "@/components/MusicComponents.vue";
+import InterviewComponents from "@/components/interviewComponents.vue";
+
 
 export default {
   name: 'App',
@@ -28,6 +32,7 @@ export default {
     BillComponents,
     SlotComponents,
     MusicComponents,
+    InterviewComponents,
   }
 }
 </script>

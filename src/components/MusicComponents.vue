@@ -8,11 +8,8 @@
       <router-link to="/search">搜索页</router-link>
     </div>
     <div class="top">
-      <router-view></router-view>      <!-- 路由出口 → 匹配的组件所展示的位置 -->
+<!--      <router-view></router-view>      &lt;!&ndash; 路由出口 → 匹配的组件所展示的位置 &ndash;&gt;-->
     </div>
-
-
-
   </div>
 
 

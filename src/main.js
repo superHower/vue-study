@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router/index'
+import VueRouter from "vue-router";
+
+// import musicRouter from './router/musicRouter';
+import interviewRouter from "./router/interviewRouter";
 
 
 
@@ -12,7 +15,7 @@ import BaseGoodsItem from "@/components/Xtx/BaseGoodsItem.vue";
 
 
 Vue.config.productionTip = false  // vue配置
-
+Vue.use(VueRouter) // 启用VueRouter
 
 Vue.component('BaseGoodsItem', BaseGoodsItem)// 全局组件
 Vue.directive('focus', {    // 全局指令
@@ -23,8 +26,9 @@ Vue.directive('focus', {    // 全局指令
 
 
 
-
 new Vue({
   render: h => h(App),
-  router: router
+  router:interviewRouter
 }).$mount('#app')
+
+
