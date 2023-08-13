@@ -1,6 +1,6 @@
 <template>
   <div class="article-detail-page">
-    <nav class="nav"><span @click="$router.back()" class="back">&lt;</span> {{article.subjectName}}</nav>
+    <nav class="nav"><span @click="$router.push('/layout')" class="back">&lt;</span> {{article.subjectName}}</nav>
     <header class="header">
       <h1>{{article.stem}}</h1>
       <p>{{article.createdAt}} | {{article.views}} 浏览量 | {{article.likeCount}} 点赞</p>
@@ -32,7 +32,6 @@ export default {
     // console.log(this.$route.params.id)
     this.id = this.$route.params.id
     const res = await axios.get(`https://mock.boxuegu.com/mock/3083/articles/${this.id}`)
-    console.log(res)
     this.article = res.data.result
 
   }

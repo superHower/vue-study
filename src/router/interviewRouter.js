@@ -15,7 +15,7 @@ const interviewRouter = new VueRouter({
     mode: "history",  // 模式设置  （hash模式：有‘#’）
     routes: [    // 规则
         { path: '/', redirect: '/layout' },
-        { path: '/layout', component: Layout,
+        { path: '/layout', component: Layout, redirect: '/Article',
             children: [
                 { path: '/Article', component: Article },
                 { path: '/Collect', component: Collect },

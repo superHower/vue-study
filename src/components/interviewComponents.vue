@@ -1,15 +1,19 @@
+<template>
+  <div class="interviewComponents">
+<!--    使用keep-alive 一级路由匹配的组件都会被缓存   -->
+    <keep-alive :include="['ArticlePage']">
+      <router-view></router-view>
+    </keep-alive>
+
+  </div>
+</template>
+
+
 <script>
 export default {
   name: "interviewComponents",
 }
 </script>
-
-<template>
-  <div class="interviewComponents">
-    <router-view></router-view>
-  </div>
-</template>
-
 
 <style lang="less" scoped>
 .interviewComponents {

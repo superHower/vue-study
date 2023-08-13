@@ -1,7 +1,7 @@
 <template>
   <div class="h5-wrapper">
     <div class="content">
-      <router-view></router-view>
+        <router-view></router-view>
     </div>
     <nav class="tab-bar">
       <router-link to="/article">面经</router-link>
@@ -14,7 +14,24 @@
 
 <script>
 export default {
-  name: "LayoutPage",
+  name: 'LayoutPage',
+
+
+  created() {
+    console.log('created 组件被加载')
+  },
+  mounted () {
+    console.log('mounted 组件dom被渲染')
+  },
+  destroyed() {
+    console.log('destroyed 组件被销毁')
+  },
+  activated() {
+    console.log('activated 组件激活， 看到页面（keep-alive缓存才有）')
+  },
+  deactivated() {
+    console.log('deactivated 组件失活， 离开页面（keep-alive缓存才有）')
+  },
 }
 </script>
 
@@ -27,7 +44,7 @@ export default {
   }
   .tab-bar {
     position: absolute;
-    top: 6904px;
+    top: 6984px;
 
     width: 496px;
     height: 50px;
